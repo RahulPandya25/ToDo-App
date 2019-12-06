@@ -64,7 +64,7 @@ header .navbar li:last-child {
 header .navbar li::before {
   position: absolute;
   content: "";
-  top: 40%;
+  top: 8px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -86,15 +86,36 @@ header .navbar li .nav-links {
   color: var(--accents);
 }
 
-main {
+section {
   background: #e5e5e5;
   min-height: calc(100vh - 40px);
+  padding-top: 80px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-main .container {
-  background: lightblue;
-  height: 100%;
-  width: 80%;
+section .card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 250px;
+  min-height: 300px;
+  background: white;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 footer {
