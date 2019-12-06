@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-
 :root {
   --tranistion: all 0.25s ease-in-out;
 }
@@ -9,10 +8,12 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
 body {
   background: lightblue;
 }
+/*# sourceMappingURL=main.css.map */
