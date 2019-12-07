@@ -153,6 +153,32 @@ section {
     .todo-items .item-set,
     .completed-items .item-set {
       padding: 0.25rem 0.5rem 0.25rem 1.25rem;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &:hover .item-action {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+
+    .item-set .item-action {
+      display: flex;
+      opacity: 0;
+      cursor: none;
+
+      .tick,
+      .cross {
+        margin: 0 2px;
+        color: rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          color: rgba(0, 0, 0, 0.8);
+        }
+      }
     }
 
     .completed-items .item-set .label {

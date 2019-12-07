@@ -170,6 +170,44 @@ section .card .todo-items::after {
 section .card .todo-items .item-set,
 section .card .completed-items .item-set {
   padding: 0.25rem 0.5rem 0.25rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .card .todo-items .item-set:hover .item-action,
+section .card .completed-items .item-set:hover .item-action {
+  opacity: 1;
+  cursor: pointer;
+}
+
+section .card .item-set .item-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  cursor: none;
+}
+
+section .card .item-set .item-action .tick,
+section .card .item-set .item-action .cross {
+  margin: 0 2px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+section .card .item-set .item-action .tick:hover,
+section .card .item-set .item-action .cross:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 section .card .completed-items .item-set .label {
