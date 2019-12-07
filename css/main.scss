@@ -21,6 +21,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+*::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -55,6 +59,7 @@ header {
       list-style-type: none;
       cursor: pointer;
       position: relative;
+      z-index: 1;
 
       &:last-child {
         margin-right: 0;
@@ -117,6 +122,11 @@ section {
       font-weight: 500;
       padding: 1rem 0.5rem 0.25rem 0.75rem;
       position: relative;
+      z-index: 1;
+
+      input[type="text"] {
+        all: unset;
+      }
 
       &::after {
         position: absolute;
@@ -127,6 +137,7 @@ section {
         width: 100%;
         height: 100%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        z-index: -1;
       }
     }
 
@@ -136,6 +147,12 @@ section {
       font-weight: 400;
       position: relative;
       z-index: 1;
+    }
+
+    .todo-items .item-set {
+      input[type="text"] {
+        all: unset;
+      }
     }
 
     .todo-items::after {
@@ -171,7 +188,8 @@ section {
       cursor: none;
 
       .tick,
-      .cross {
+      .cross,
+      .plus {
         margin: 0 2px;
         color: rgba(0, 0, 0, 0.5);
 

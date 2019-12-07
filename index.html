@@ -9,6 +9,7 @@
     <title>ToDo</title>
   </head>
   <body>
+    <!-- header starts here -->
     <header>
       <div class="logo">
         <span class="logo-text">ToDo</span>
@@ -20,50 +21,84 @@
         <li><a class="nav-links" href="#">Dark Mode</a></li>
       </ul>
     </header>
+    <!-- header ends here -->
 
+    <!-- main section starts here -->
     <section>
+      <!-- card starts here -->
       <div class="card">
-        <div class="title">Title</div>
+        <!-- card title starts here -->
+        <div class="title">
+          <input type="text" placeholder="Add Title" />
+        </div>
+        <!-- card title ends here -->
+
+        <!-- card todo-item list starts here -->
         <div class="todo-items">
           <div class="item-set">
-            <div class="label">Todo</div>
+            <label class="label">Todo</label>
             <div class="item-action">
               <div class="tick">tick</div>
               <div class="cross">cross</div>
             </div>
           </div>
           <div class="item-set">
-            <div class="label">Todo</div>
+            <label class="label">Todo</label>
             <div class="item-action">
               <div class="tick">tick</div>
               <div class="cross">cross</div>
             </div>
           </div>
           <div class="item-set">
-            <div class="label">Todo</div>
+            <label class="label">Todo</label>
             <div class="item-action">
               <div class="tick">tick</div>
+              <div class="cross">cross</div>
+            </div>
+          </div>
+          <div class="item-set">
+            <input type="text" placeholder="Add Item" />
+            <div class="item-action">
+              <div class="plus">plus</div>
+            </div>
+          </div>
+        </div>
+        <!-- card todo-item list ends here -->
+
+        <!-- card completed-item list starts here -->
+        <div class="completed-items">
+          <div class="item-set">
+            <label class="label">Completed</label>
+            <div class="item-action">
+              <div class="cross">cross</div>
+            </div>
+          </div>
+          <div class="item-set">
+            <label class="label">Completed</label>
+            <div class="item-action">
+              <div class="cross">cross</div>
+            </div>
+          </div>
+          <div class="item-set">
+            <label class="label">Completed</label>
+            <div class="item-action">
               <div class="cross">cross</div>
             </div>
           </div>
         </div>
-        <div class="completed-items">
+        <!-- card completed-item list ends here -->
+      </div>
+      <!-- card ends here -->
+
+      <div class="card">
+        <div class="title">
+          <input type="text" placeholder="Add Title" />
+        </div>
+        <div class="todo-items">
           <div class="item-set">
-            <div class="label">Completed</div>
+            <input type="text" placeholder="Add Item" />
             <div class="item-action">
-              <div class="cross">cross</div>
-            </div>
-          </div>
-          <div class="item-set">
-            <div class="label">Completed</div>
-            <div class="item-action">
-              <div class="cross">cross</div>
-            </div>
-          </div>
-          <div class="item-set">
-            <div class="label">Completed</div>
-            <div class="item-action">
-              <div class="cross">cross</div>
+              <div class="plus">plus</div>
             </div>
           </div>
         </div>
@@ -72,14 +107,16 @@
       <div class="card"></div>
       <div class="card"></div>
       <div class="card"></div>
-      <div class="card"></div>
     </section>
+    <!-- main section ends here -->
 
+    <!-- footer starts here -->
     <footer>
       <span class="footer-text"
         >&copy; 2019 | Designed and Developed by Aayushee & Rahul</span
       >
     </footer>
+    <!-- footer ends here -->
 
     <script src="js/rahul.js"></script>
     <script src="js/aayushee.js"></script>
