@@ -150,6 +150,7 @@ section .card .title {
   padding: 1rem 0.5rem 0.25rem 0.75rem;
   position: relative;
   z-index: 1;
+  color: var(--accent);
 }
 
 section .card .title input[type="text"] {
@@ -229,14 +230,21 @@ section .card .item-set .item-action {
 section .card .item-set .item-action .tick,
 section .card .item-set .item-action .cross,
 section .card .item-set .item-action .plus {
-  margin: 0 2px;
+  margin: 0 5px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+section .card .item-set .item-action .tick .fa::before,
+section .card .item-set .item-action .cross .fa::before,
+section .card .item-set .item-action .plus .fa::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.125rem;
 }
 
 section .card .item-set .item-action .tick:hover,
 section .card .item-set .item-action .cross:hover,
 section .card .item-set .item-action .plus:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(16, 138, 109, 0.8);
 }
 
 section .card .completed-items .item-set .label {

@@ -123,6 +123,7 @@ section {
       padding: 1rem 0.5rem 0.25rem 0.75rem;
       position: relative;
       z-index: 1;
+      color: var(--accent);
 
       input[type="text"] {
         all: unset;
@@ -190,11 +191,16 @@ section {
       .tick,
       .cross,
       .plus {
-        margin: 0 2px;
+        .fa::before {
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 1.125rem;
+        }
+        margin: 0 5px;
+
         color: rgba(0, 0, 0, 0.5);
 
         &:hover {
-          color: rgba(0, 0, 0, 0.8);
+          color: rgba(16, 138, 109, 0.8);
         }
       }
     }
