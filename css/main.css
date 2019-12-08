@@ -113,8 +113,6 @@ section {
   background: var(--content-bg);
   min-height: calc(100vh - var(--footer-height));
   padding-top: var(--header-height);
-  padding-right: 2rem;
-  padding-left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,14 +125,36 @@ section {
       flex-wrap: wrap;
 }
 
+section .container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+section .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .grid-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 0.5em;
+}
+
+section .grid-item {
+  margin: 1em 0;
+}
+
 section .card {
-  min-width: 250px;
-  min-height: 300px;
+  width: 100%;
   background: var(--card-bg);
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), inset 1px 1px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), inset 1px 1px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  margin: 2rem;
+  -webkit-transition: var(--tranistion);
+  transition: var(--tranistion);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,6 +270,11 @@ section .card .item-set .item-action .plus:hover {
 section .card .completed-items .item-set .label {
   text-decoration: line-through;
   color: var(--completed-item);
+}
+
+section .card:hover {
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 footer {

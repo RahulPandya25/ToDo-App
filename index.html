@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://use.fontawesome.com/dcab52ec27.js"></script>
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <title>ToDo</title>
   </head>
   <body>
@@ -25,105 +26,428 @@
 
     <!-- main section starts here -->
     <section>
-      <!-- card starts here -->
-      <div class="card">
-        <!-- card title starts here -->
-        <div class="title">
-          <input type="text" placeholder="Add Title" />
-        </div>
-        <!-- card title ends here -->
+      <div class="container">
+        <div class="grid">
+          <div class="grid-col grid-col--1"></div>
+          <div class="grid-col grid-col--2"></div>
+          <div class="grid-col grid-col--3"></div>
 
-        <!-- card todo-item list starts here -->
-        <div class="todo-items">
-          <div class="item-set">
-            <label class="label">Todo</label>
-            <div class="item-action">
-              <div class="tick"><i class="fa fa-check"></i></div>
-              <div class="cross"><i class="fa fa-times"></i></div>
+          <!-- card starts here -->
+          <div class="grid-item card">
+            <!-- card title starts here -->
+            <div class="title">
+              <input type="text" placeholder="Add Title" />
             </div>
-          </div>
-          <div class="item-set">
-            <label class="label">Todo</label>
-            <div class="item-action">
-              <div class="tick"><i class="fa fa-check"></i></div>
-              <div class="cross"><i class="fa fa-times"></i></div>
-            </div>
-          </div>
-          <div class="item-set">
-            <label class="label">Todo</label>
-            <div class="item-action">
-              <div class="tick"><i class="fa fa-check"></i></div>
-              <div class="cross"><i class="fa fa-times"></i></div>
-            </div>
-          </div>
-          <div class="item-set">
-            <input type="text" placeholder="Add New Item" />
-            <div class="item-action">
-              <div class="plus"><i class="fa fa-plus"></i></div>
-            </div>
-          </div>
-        </div>
-        <!-- card todo-item list ends here -->
+            <!-- card title ends here -->
 
-        <!-- card completed-item list starts here -->
-        <div class="completed-items">
-          <div class="item-set">
-            <label class="label">Completed</label>
-            <div class="item-action">
-              <div class="cross"><i class="fa fa-times"></i></div>
+            <!-- card todo-item list starts here -->
+            <div class="todo-items">
+              <div class="item-set">
+                <label class="label">Todo</label>
+                <div class="item-action">
+                  <div class="tick"><i class="fa fa-check"></i></div>
+                  <div class="cross"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
+              <div class="item-set">
+                <label class="label">Todo</label>
+                <div class="item-action">
+                  <div class="tick"><i class="fa fa-check"></i></div>
+                  <div class="cross"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
+              <div class="item-set">
+                <label class="label">Todo</label>
+                <div class="item-action">
+                  <div class="tick"><i class="fa fa-check"></i></div>
+                  <div class="cross"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
+              <div class="item-set">
+                <input type="text" placeholder="Add New Item" />
+                <div class="item-action">
+                  <div class="plus"><i class="fa fa-plus"></i></div>
+                </div>
+              </div>
+            </div>
+            <!-- card todo-item list ends here -->
+
+            <!-- card completed-item list starts here -->
+            <div class="completed-items">
+              <div class="item-set">
+                <label class="label">Completed</label>
+                <div class="item-action">
+                  <div class="cross"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
+              <div class="item-set">
+                <label class="label">Completed</label>
+                <div class="item-action">
+                  <div class="cross"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
+              <div class="item-set">
+                <label class="label">Completed</label>
+                <div class="item-action">
+                  <div class="cross"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
+            </div>
+            <!-- card completed-item list ends here -->
+          </div>
+          <!-- card ends here -->
+
+          <div class="grid-item card">
+            <div class="title">
+              <label for="title">Final Card</label>
+            </div>
+            <div class="todo-items">
+              <div class="item-set">
+                <label class="label">Todo</label>
+                <div class="item-action">
+                  <div class="tick"><i class="fa fa-check"></i></div>
+                  <div class="cross"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
+
+              <div class="item-set">
+                <input type="text" placeholder="Add Item" />
+                <div class="item-action">
+                  <div class="plus"><i class="fa fa-plus"></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="completed-items">
+              <div class="item-set">
+                <label class="label">Completed</label>
+                <div class="item-action">
+                  <div class="cross"><i class="fa fa-times"></i></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="item-set">
-            <label class="label">Completed</label>
-            <div class="item-action">
-              <div class="cross"><i class="fa fa-times"></i></div>
-            </div>
+          
+          <!-- card starts here -->
+          <div class="grid-item card">
+                        <!-- card title starts here -->
+                        <div class="title">
+                          <input type="text" placeholder="Add Title" />
+                        </div>
+                        <!-- card title ends here -->
+            
+                        <!-- card todo-item list starts here -->
+                        <div class="todo-items">
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <input type="text" placeholder="Add New Item" />
+                            <div class="item-action">
+                              <div class="plus"><i class="fa fa-plus"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- card todo-item list ends here -->
+            
+                        <!-- card completed-item list starts here -->
+                        <div class="completed-items">
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- card completed-item list ends here -->
           </div>
-          <div class="item-set">
-            <label class="label">Completed</label>
-            <div class="item-action">
-              <div class="cross"><i class="fa fa-times"></i></div>
-            </div>
-          </div>
+          <!-- card ends here -->
+            
+          <div class="grid-item card">
+                        <div class="title">
+                          <label for="title">Final Card</label>
+                        </div>
+                        <div class="todo-items">
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+            
+                          <div class="item-set">
+                            <input type="text" placeholder="Add Item" />
+                            <div class="item-action">
+                              <div class="plus"><i class="fa fa-plus"></i></div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="completed-items">
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                        </div>
+          </div>          
+          <!-- card starts here -->
+                      <div class="grid-item card">
+                        <!-- card title starts here -->
+                        <div class="title">
+                          <input type="text" placeholder="Add Title" />
+                        </div>
+                        <!-- card title ends here -->
+            
+                        <!-- card todo-item list starts here -->
+                        <div class="todo-items">
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <input type="text" placeholder="Add New Item" />
+                            <div class="item-action">
+                              <div class="plus"><i class="fa fa-plus"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- card todo-item list ends here -->
+            
+                        <!-- card completed-item list starts here -->
+                        <div class="completed-items">
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- card completed-item list ends here -->
+                      </div>
+                      <!-- card ends here -->
+            
+                      <div class="grid-item card">
+                        <div class="title">
+                          <label for="title">Final Card</label>
+                        </div>
+                        <div class="todo-items">
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+            
+                          <div class="item-set">
+                            <input type="text" placeholder="Add Item" />
+                            <div class="item-action">
+                              <div class="plus"><i class="fa fa-plus"></i></div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="completed-items">
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+            
+                      <div class="grid-item card">
+                        <div class="title">
+                          <label for="title">Final Card</label>
+                        </div>
+                        <div class="todo-items">
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+            
+                          <div class="item-set">
+                            <input type="text" placeholder="Add Item" />
+                            <div class="item-action">
+                              <div class="plus"><i class="fa fa-plus"></i></div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="completed-items">
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="grid-item card">
+                        <div class="title">
+                          <label for="title">Final Card</label>
+                        </div>
+                        <div class="todo-items">
+                          <div class="item-set">
+                            <label class="label">Todo</label>
+                            <div class="item-action">
+                              <div class="tick"><i class="fa fa-check"></i></div>
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+            
+                          <div class="item-set">
+                            <input type="text" placeholder="Add Item" />
+                            <div class="item-action">
+                              <div class="plus"><i class="fa fa-plus"></i></div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="completed-items">
+                          <div class="item-set">
+                            <label class="label">Completed</label>
+                            <div class="item-action">
+                              <div class="cross"><i class="fa fa-times"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+          <!-- card starts here -->
+          <div class="grid-item card">
+              <!-- card title starts here -->
+              <div class="title">
+                <input type="text" placeholder="Add Title" />
+              </div>
+              <!-- card title ends here -->
+  
+              <!-- card todo-item list starts here -->
+              <div class="todo-items">
+                <div class="item-set">
+                  <label class="label">Todo</label>
+                  <div class="item-action">
+                    <div class="tick"><i class="fa fa-check"></i></div>
+                    <div class="cross"><i class="fa fa-times"></i></div>
+                  </div>
+                </div>
+                <div class="item-set">
+                  <label class="label">Todo</label>
+                  <div class="item-action">
+                    <div class="tick"><i class="fa fa-check"></i></div>
+                    <div class="cross"><i class="fa fa-times"></i></div>
+                  </div>
+                </div>
+                <div class="item-set">
+                  <label class="label">Todo</label>
+                  <div class="item-action">
+                    <div class="tick"><i class="fa fa-check"></i></div>
+                    <div class="cross"><i class="fa fa-times"></i></div>
+                  </div>
+                </div>
+                <div class="item-set">
+                  <input type="text" placeholder="Add New Item" />
+                  <div class="item-action">
+                    <div class="plus"><i class="fa fa-plus"></i></div>
+                  </div>
+                </div>
+              </div>
+              <!-- card todo-item list ends here -->
+  
+              <!-- card completed-item list starts here -->
+              <div class="completed-items">
+                <div class="item-set">
+                  <label class="label">Completed</label>
+                  <div class="item-action">
+                    <div class="cross"><i class="fa fa-times"></i></div>
+                  </div>
+                </div>
+                <div class="item-set">
+                  <label class="label">Completed</label>
+                  <div class="item-action">
+                    <div class="cross"><i class="fa fa-times"></i></div>
+                  </div>
+                </div>
+                <div class="item-set">
+                  <label class="label">Completed</label>
+                  <div class="item-action">
+                    <div class="cross"><i class="fa fa-times"></i></div>
+                  </div>
+                </div>
+              </div>
+              <!-- card completed-item list ends here -->
+</div>
+<!-- card ends here -->
         </div>
-        <!-- card completed-item list ends here -->
       </div>
-      <!-- card ends here -->
-
-      <div class="card">
-        <div class="title">
-          <label for="title">Final Card</label>
-        </div>
-        <div class="todo-items">
-          <div class="item-set">
-            <label class="label">Todo</label>
-            <div class="item-action">
-              <div class="tick"><i class="fa fa-check"></i></div>
-              <div class="cross"><i class="fa fa-times"></i></div>
-            </div>
-          </div>
-
-          <div class="item-set">
-            <input type="text" placeholder="Add Item" />
-            <div class="item-action">
-              <div class="plus"><i class="fa fa-plus"></i></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="completed-items">
-          <div class="item-set">
-            <label class="label">Completed</label>
-            <div class="item-action">
-              <div class="cross"><i class="fa fa-times"></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
     </section>
     <!-- main section ends here -->
 
