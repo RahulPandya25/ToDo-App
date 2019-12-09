@@ -37,6 +37,7 @@ header {
   justify-content: space-between;
 
   color: var(--accent);
+  text-align: center;
 
   background: var(--header-bg);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -104,7 +105,7 @@ section {
   flex-wrap: wrap;
 
   .container {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
   }
   .grid {
@@ -117,10 +118,6 @@ section {
   .grid-item {
     margin: 1em 0;
   }
-  // .grid-col--2,
-  // .grid-col--3 {
-  //   display: none;
-  // }
 
   .card {
     width: 100%;
@@ -241,4 +238,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 1rem;
 }

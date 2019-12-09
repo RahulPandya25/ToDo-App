@@ -52,6 +52,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: var(--accent);
+  text-align: center;
   background: var(--header-bg);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -126,7 +127,7 @@ section {
 }
 
 section .container {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -290,5 +291,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,47 @@
+:root {
+  --header-height: 55px;
+  --footer-height: 25px;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+header .navbar {
+  display: none;
+}
+
+section .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section .grid-col {
+  padding: 0;
+}
+
+section .grid-col--2,
+section .grid-col--3 {
+  display: none;
+}
+
+section .card .title {
+  font-size: 1rem;
+}
+
+section .card .todo-items,
+section .card .completed-items {
+  font-size: 0.75rem;
+}
+
+section .card .item-set .item-action .tick .fa::before,
+section .card .item-set .item-action .cross .fa::before,
+section .card .item-set .item-action .plus .fa::before {
+  font-size: 0.75rem;
+}
+
+footer {
+  font-size: 0.6rem;
+}
+/*# sourceMappingURL=mobile.css.map */
