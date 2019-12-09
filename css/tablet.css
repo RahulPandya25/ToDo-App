@@ -1,6 +1,13 @@
 :root {
-  --header-height: 55px;
-  --footer-height: 25px;
+  --header-height: 62px;
+  --footer-height: 28px;
+}
+
+header {
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .logo {
@@ -13,35 +20,29 @@ header .navbar {
 }
 
 section .container {
-  width: 90%;
-  margin: 0 auto;
+  width: 85%;
 }
 
-section .grid-col {
-  padding: 0;
-}
-
-section .grid-col--2,
 section .grid-col--3 {
   display: none;
 }
 
 section .card .title {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 section .card .todo-items,
 section .card .completed-items {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 section .card .item-set .item-action .tick .fa::before,
 section .card .item-set .item-action .cross .fa::before,
 section .card .item-set .item-action .plus .fa::before {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 footer {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=tablet.css.map */

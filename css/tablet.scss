@@ -1,9 +1,11 @@
 :root {
-  --header-height: 55px;
-  --footer-height: 25px;
+  --header-height: 62px;
+  --footer-height: 28px;
 }
 
 header {
+  padding: 0;
+  justify-content: center;
   .logo {
     font-weight: 600;
     font-size: 1.5rem;
@@ -15,25 +17,20 @@ header {
 
 section {
   .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .grid-col {
-    padding: 0;
+    width: 85%;
   }
 
-  .grid-col--2,
   .grid-col--3 {
     display: none;
   }
 
   .card {
     .title {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
     .todo-items,
     .completed-items {
-      font-size: 0.75rem;
+      font-size: 0.9rem;
     }
 
     .item-set .item-action {
@@ -41,7 +38,7 @@ section {
       .cross,
       .plus {
         .fa::before {
-          font-size: 0.75rem;
+          font-size: 0.9rem;
         }
       }
     }
@@ -49,5 +46,5 @@ section {
 }
 
 footer {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
