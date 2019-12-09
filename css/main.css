@@ -227,6 +227,7 @@ section .card .title::after {
 }
 
 section .card .todo-items,
+section .card .new-item,
 section .card .completed-items {
   font-size: 1rem;
   font-weight: 400;
@@ -235,11 +236,11 @@ section .card .completed-items {
   z-index: 1;
 }
 
-section .card .todo-items .item-set input[type="text"] {
+section .card .new-item .item-set input[type="text"] {
   all: unset;
 }
 
-section .card .todo-items::after {
+section .card .new-item::after {
   position: absolute;
   content: "";
   top: 0;
@@ -253,6 +254,7 @@ section .card .todo-items::after {
 }
 
 section .card .todo-items .item-set,
+section .card .new-item .item-set,
 section .card .completed-items .item-set {
   padding: 0.25rem 0.5rem 0.25rem 1.25rem;
   display: -webkit-box;
@@ -271,6 +273,7 @@ section .card .completed-items .item-set {
 }
 
 section .card .todo-items .item-set:hover .item-action,
+section .card .new-item .item-set:hover .item-action,
 section .card .completed-items .item-set:hover .item-action {
   opacity: 1;
   cursor: pointer;

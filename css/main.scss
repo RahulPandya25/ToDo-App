@@ -179,6 +179,7 @@ section {
     }
 
     .todo-items,
+    .new-item,
     .completed-items {
       font-size: 1rem;
       font-weight: 400;
@@ -187,13 +188,13 @@ section {
       z-index: 1;
     }
 
-    .todo-items .item-set {
+    .new-item .item-set {
       input[type="text"] {
         all: unset;
       }
     }
 
-    .todo-items::after {
+    .new-item::after {
       position: absolute;
       content: "";
       top: 0;
@@ -206,6 +207,7 @@ section {
     }
 
     .todo-items .item-set,
+    .new-item .item-set,
     .completed-items .item-set {
       padding: 0.25rem 0.5rem 0.25rem 1.25rem;
 

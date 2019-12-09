@@ -61,9 +61,14 @@ var completeThisItem = function(event) {
 
   // html for completed item
   var html =
-    '<div class="item-set"><label class="label">' +
+    '<div class="item-set">' +
+    '<label class="label">' +
     text +
-    '</label><div class="item-action"><div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div></div></div>';
+    "</label>" +
+    '<div class="item-action">' +
+    '<div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>' +
+    "</div>" +
+    "</div>";
 
   // get completed element
   var cardId = getCardId(event);
@@ -86,14 +91,54 @@ var addNewTodoItem = function(event) {
 
   // html for todo item
   var html =
-    '<div class="item-set"><label class="label">' +
+    '<div class="item-set">' +
+    '<label class="label">' +
     text +
-    '</label><div class="item-action"><div class="tick"><i class="fa fa-check" onclick="completeThisItem(event)"></i></div><div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div></div></div>';
-
+    "</label>" +
+    '<div class="item-action">' +
+    '<div class="tick"><i class="fa fa-check" onclick="completeThisItem(event)"></i></div>' +
+    '<div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>' +
+    "</div>" +
+    "</div>";
   var todoItems = document
     .querySelector("#" + cardId)
     .querySelector(".todo-items");
   todoItems.insertAdjacentHTML("beforeend", html);
 
   input.value = ""; // reset input value
+};
+
+var saveTitle = function(event) {
+  var title = event.target.value;
+  // save this title value to json
+};
+
+// Todo: get the ID first
+var addNewCard = function() {
+  var id = 10; //hardcoded for testing
+
+  var html =
+    '<div class="grid-item card" id="card-' +
+    id +
+    '">' +
+    '<div class="title">' +
+    '<input type="text" placeholder="Add Title" onfocusout="saveTitle(event)"/>' +
+    "</div>" +
+    '<div class="todo-items"></div>' +
+    '<div class="new-item">' +
+    '<div class="item-set" id="new-item-' +
+    id +
+    '">' +
+    '<input type="text" placeholder="Add New Item" />' +
+    '<div class="item-action">' +
+    '<div class="plus"><i class="fa fa-plus"  onclick="addNewTodoItem(event)"></i></div>' +
+    "</div>" +
+    "</div>" +
+    "</div>" +
+    '<div class="completed-items"></div>' +
+    "</div>";
+
+  var grid = document.querySelector(".grid");
+
+  grid.insertAdjacentHTML("beforeend", html);
 };

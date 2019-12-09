@@ -24,8 +24,8 @@
       </div>
       <ul class="navbar">
         <!-- TODO: CTA to be added -->
-        <li><a class="nav-links create-new-list" href="#">New List</a></li>
-        <li><a class="nav-links change-view" href="#">Change view</a></li>
+        <li><span class="nav-links create-new-list" onclick="addNewCard()">New List</span></li>
+        <li><span class="nav-links change-view">Change view</span></li>
         <li><span class="nav-links color-mode" id="dark-mode-toggle">Color Mode</span></li>
       </ul>
     </header>
@@ -43,7 +43,7 @@
           <div class="grid-item card" id="card-1">
             <!-- card title starts here -->
             <div class="title">
-              <input type="text" placeholder="Add Title" />
+              <input type="text" placeholder="Add Title" onfocusout="saveTitle(event)"/>
             </div>
             <!-- card title ends here -->
 
@@ -70,6 +70,9 @@
                   <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
                 </div>
               </div>
+            </div>
+            <!-- card todo-item list ends here -->
+            <div class="new-item">
               <div class="item-set" id="new-item-1">
                 <input type="text" placeholder="Add New Item" />
                 <div class="item-action">
@@ -77,8 +80,6 @@
                 </div>
               </div>
             </div>
-            <!-- card todo-item list ends here -->
-
             <!-- card completed-item list starts here -->
             <div class="completed-items">
               <div class="item-set">
@@ -106,7 +107,7 @@
 
           <div class="grid-item card" id="card-2">
             <div class="title">
-              <label for="title">Final Card</label>
+              <input type="text" placeholder="Add Title" onfocusout="saveTitle(event)"/>
             </div>
             <div class="todo-items">
               <div class="item-set">
@@ -116,7 +117,9 @@
                   <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
                 </div>
               </div>
+            </div>
 
+            <div class="new-item">
               <div class="item-set" id="new-item-2">
                 <input type="text" placeholder="Add New Item" />
                 <div class="item-action">
@@ -138,9 +141,10 @@
           <!-- new card format -->
           <div class="grid-item card" id="card-3">
             <div class="title">
-              <input type="text" placeholder="Add Title" />
+              <input type="text" placeholder="Add Title" onfocusout="saveTitle(event)"/>
             </div>
-            <div class="todo-items">
+            <div class="todo-items"></div>
+            <div class="new-item">
               <div class="item-set" id="new-item-3">
                 <input type="text" placeholder="Add New Item" />
                 <div class="item-action">
