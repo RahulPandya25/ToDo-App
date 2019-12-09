@@ -5,8 +5,10 @@
   --header-height: 70px;
   --content-bg: #f3f3f3;
   --card-bg: white;
+  --card-text: black;
   --completed-item: #5f6368;
   --footer-text: white;
+  --footer-bg: #15c39a;
   --footer-height: 30px;
   --tranistion: all 0.2s ease-in-out;
 }
@@ -19,6 +21,33 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+.darkmode {
+  --accent: #15c39a;
+  --header-bg: #1f1f20;
+  --content-bg: #1a1a1b;
+  --card-bg: #2d2e30;
+  --card-text: #e8eaed;
+  --completed-item: #9aa0a6;
+  --footer-text: #15c39a;
+  --footer-bg: var(--header-bg);
+}
+
+.darkmode *::-webkit-input-placeholder {
+  color: #9aa0a6;
+}
+
+.darkmode *:-ms-input-placeholder {
+  color: #9aa0a6;
+}
+
+.darkmode *::-ms-input-placeholder {
+  color: #9aa0a6;
+}
+
+.darkmode *::placeholder {
+  color: #9aa0a6;
 }
 
 *::-webkit-input-placeholder {
@@ -37,7 +66,8 @@
   color: rgba(0, 0, 0, 0.4);
 }
 
-.fa::before {
+.fa::before,
+.fas::before {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 1.125rem;
 }
@@ -200,6 +230,7 @@ section .card .todo-items,
 section .card .completed-items {
   font-size: 1rem;
   font-weight: 400;
+  color: var(--card-text);
   position: relative;
   z-index: 1;
 }
@@ -278,7 +309,7 @@ section .card:hover {
 
 footer {
   height: var(--footer-height);
-  background: var(--accent);
+  background: var(--footer-bg);
   color: var(--footer-text);
   display: -webkit-box;
   display: -ms-flexbox;
