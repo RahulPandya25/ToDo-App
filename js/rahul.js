@@ -108,6 +108,36 @@ var addNewTodoItem = function(event) {
   input.value = ""; // reset input value
 };
 
+var addNewTodoItemOnEnter = function(event) {
+  if (event.which == 13 || event.keyCode == 13) {
+    var cardId = getCardId(event);
+    var text = event.target.value;
+    // html for todo item
+    var html =
+      '<div class="item-set">' +
+      '<label class="label">' +
+      text +
+      "</label>" +
+      '<div class="item-action">' +
+      '<div class="tick"><i class="fa fa-check" onclick="completeThisItem(event)"></i></div>' +
+      '<div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>' +
+      "</div>" +
+      "</div>";
+    var todoItems = document
+      .querySelector("#" + cardId)
+      .querySelector(".todo-items");
+    todoItems.insertAdjacentHTML("beforeend", html);
+
+    event.target.value = ""; // reset input value
+  }
+};
+
+var createElementFromString = function(htmlString) {
+  var div = document.createElement("div");
+  div.innerHTML = htmlString.trim();
+  return div.firstChild;
+};
+
 var saveTitle = function(event) {
   var title = event.target.value;
   // save this title value to json
@@ -129,16 +159,15 @@ var addNewCard = function() {
     '<div class="item-set" id="new-item-' +
     id +
     '">' +
-    '<input type="text" placeholder="Add New Item" />' +
+    '<input type="text" placeholder="Add New Item" onkeypress="addNewTodoItemOnEnter(event)"/>' +
     '<div class="item-action">' +
-    '<div class="plus"><i class="fa fa-plus"  onclick="addNewTodoItem(event)"></i></div>' +
+    '<div class="plus"><i class="fa fa-plus" onclick="addNewTodoItem(event)"></i></div>' +
     "</div>" +
     "</div>" +
     "</div>" +
     '<div class="completed-items"></div>' +
     "</div>";
 
-  var grid = document.querySelector(".grid");
-
-  grid.insertAdjacentHTML("beforeend", html);
+  var element = createElementFromString(html);
+  colc.append(element);
 };
