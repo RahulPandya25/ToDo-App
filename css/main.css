@@ -37,6 +37,11 @@
   color: rgba(0, 0, 0, 0.4);
 }
 
+.fa::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.125rem;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -253,13 +258,6 @@ section .card .item-set .item-action .cross,
 section .card .item-set .item-action .plus {
   margin: 0 5px;
   color: rgba(0, 0, 0, 0.5);
-}
-
-section .card .item-set .item-action .tick .fa::before,
-section .card .item-set .item-action .cross .fa::before,
-section .card .item-set .item-action .plus .fa::before {
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 1.125rem;
 }
 
 section .card .item-set .item-action .tick:hover,

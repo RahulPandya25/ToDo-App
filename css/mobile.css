@@ -3,6 +3,10 @@
   --footer-height: 25px;
 }
 
+.fa::before {
+  font-size: 0.75rem;
+}
+
 header {
   padding: 0;
   -webkit-box-pack: center;
@@ -38,12 +42,6 @@ section .card .title {
 
 section .card .todo-items,
 section .card .completed-items {
-  font-size: 0.75rem;
-}
-
-section .card .item-set .item-action .tick .fa::before,
-section .card .item-set .item-action .cross .fa::before,
-section .card .item-set .item-action .plus .fa::before {
   font-size: 0.75rem;
 }
 

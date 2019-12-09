@@ -3,6 +3,10 @@
   --footer-height: 25px;
 }
 
+.fa::before {
+  font-size: 0.75rem;
+}
+
 header {
   padding: 0;
   justify-content: center;
@@ -35,16 +39,6 @@ section {
     .todo-items,
     .completed-items {
       font-size: 0.75rem;
-    }
-
-    .item-set .item-action {
-      .tick,
-      .cross,
-      .plus {
-        .fa::before {
-          font-size: 0.75rem;
-        }
-      }
     }
   }
 }

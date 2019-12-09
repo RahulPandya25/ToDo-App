@@ -26,6 +26,11 @@
   color: rgba(0, 0, 0, 0.4);
 }
 
+.fa::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.125rem;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -204,10 +209,6 @@ section {
       .tick,
       .cross,
       .plus {
-        .fa::before {
-          font: normal normal normal 14px/1 FontAwesome;
-          font-size: 1.125rem;
-        }
         margin: 0 5px;
 
         color: rgba(0, 0, 0, 0.5);
