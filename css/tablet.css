@@ -3,13 +3,6 @@
   --footer-height: 25px;
 }
 
-header {
-  padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 header .logo {
   font-weight: 600;
   font-size: 1.5rem;
@@ -51,4 +44,4 @@ section .card .item-set .item-action .plus .fa::before {
 footer {
   font-size: 0.6rem;
 }
-/*# sourceMappingURL=mobile.css.map */
+/*# sourceMappingURL=tablet.css.map */

@@ -1,0 +1,53 @@
+:root {
+  --header-height: 55px;
+  --footer-height: 25px;
+}
+
+header {
+  .logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+section {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .grid-col {
+    padding: 0;
+  }
+
+  .grid-col--2,
+  .grid-col--3 {
+    display: none;
+  }
+
+  .card {
+    .title {
+      font-size: 1rem;
+    }
+    .todo-items,
+    .completed-items {
+      font-size: 0.75rem;
+    }
+
+    .item-set .item-action {
+      .tick,
+      .cross,
+      .plus {
+        .fa::before {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 0.6rem;
+}
