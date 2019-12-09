@@ -15,7 +15,9 @@ header {
     font-size: 1.5rem;
   }
   .navbar {
-    display: none;
+    .nav-links:not(.color-mode) {
+      display: none;
+    }
   }
 }
 
