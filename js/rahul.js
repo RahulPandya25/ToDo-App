@@ -73,3 +73,27 @@ var completeThisItem = function(event) {
 
   completedItems.insertAdjacentHTML("beforeend", html);
 };
+
+var addNewTodoItem = function(event) {
+  var cardId = getCardId(event);
+
+  // get itemset of this new item
+  var itemset = event.path.filter(element => {
+    return element.className === "item-set";
+  });
+  var input = itemset[0].children[0];
+  var text = input.value; // input value;
+
+  // html for todo item
+  var html =
+    '<div class="item-set"><label class="label">' +
+    text +
+    '</label><div class="item-action"><div class="tick"><i class="fa fa-check" onclick="completeThisItem(event)"></i></div><div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div></div></div>';
+
+  var todoItems = document
+    .querySelector("#" + cardId)
+    .querySelector(".todo-items");
+  todoItems.insertAdjacentHTML("beforeend", html);
+
+  input.value = ""; // reset input value
+};
