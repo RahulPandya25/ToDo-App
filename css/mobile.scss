@@ -14,7 +14,7 @@ header {
     font-size: 1.5rem;
   }
   .navbar {
-    .change-view {
+    .nav-links:not(.color-mode) {
       display: none;
     }
   }

@@ -18,7 +18,7 @@ header .logo {
   font-size: 1.5rem;
 }
 
-header .navbar .change-view {
+header .navbar .nav-links:not(.color-mode) {
   display: none;
 }
 
