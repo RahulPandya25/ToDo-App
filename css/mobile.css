@@ -8,9 +8,10 @@
 }
 
 header {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .logo {
@@ -18,7 +19,11 @@ header .logo {
   font-size: 1.5rem;
 }
 
-header .navbar .nav-links:not(.color-mode) {
+header .navbar li {
+  margin: 0 8px;
+}
+
+header .navbar .change-view {
   display: none;
 }
 
