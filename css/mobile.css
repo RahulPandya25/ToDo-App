@@ -26,6 +26,10 @@ section .container {
   width: 90%;
 }
 
+section .grid-col {
+  padding: 0;
+}
+
 section .grid-col--2,
 section .grid-col--3 {
   display: none;
