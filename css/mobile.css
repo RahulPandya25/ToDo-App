@@ -8,7 +8,6 @@
 }
 
 header {
-  padding: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -19,16 +18,12 @@ header .logo {
   font-size: 1.5rem;
 }
 
-header .navbar .nav-links:not(.color-mode) {
+header .navbar .change-view {
   display: none;
 }
 
 section .container {
   width: 90%;
-}
-
-section .grid-col {
-  padding: 0;
 }
 
 section .grid-col--2,
@@ -37,13 +32,23 @@ section .grid-col--3 {
 }
 
 section .card .title {
-  font-size: 1rem;
+  font-size: 1.25rem;
+}
+
+section .card .item-set .item-action {
+  opacity: 0.6;
+}
+
+section .card .item-set .item-action .tick,
+section .card .item-set .item-action .cross,
+section .card .item-set .item-action .plus {
+  margin: 0 8px;
 }
 
 section .card .todo-items,
 section .card .new-item,
 section .card .completed-items {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 footer {

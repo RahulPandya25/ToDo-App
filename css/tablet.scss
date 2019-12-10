@@ -8,14 +8,13 @@
 }
 
 header {
-  padding: 0;
   justify-content: center;
   .logo {
     font-weight: 600;
     font-size: 1.5rem;
   }
   .navbar {
-    .nav-links:not(.color-mode) {
+    .change-view {
       display: none;
     }
   }
@@ -32,12 +31,21 @@ section {
 
   .card {
     .title {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+    }
+    .item-set .item-action {
+      opacity: 0.6;
+
+      .tick,
+      .cross,
+      .plus {
+        margin: 0 8px;
+      }
     }
     .todo-items,
     .new-item,
     .completed-items {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
     }
   }
 }

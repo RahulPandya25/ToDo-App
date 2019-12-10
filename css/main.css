@@ -145,6 +145,10 @@ header .navbar li .nav-links {
   color: var(--accents);
 }
 
+header .hamburger {
+  display: none;
+}
+
 section {
   background: var(--content-bg);
   min-height: calc(100vh - var(--footer-height));
