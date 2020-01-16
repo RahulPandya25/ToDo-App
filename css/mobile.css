@@ -40,6 +40,23 @@ section .grid-col--3 {
   display: none;
 }
 
+section .grid-col--1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .card {
+  width: 90%;
+}
+
 section .card .title {
   font-size: 1.25rem;
 }
