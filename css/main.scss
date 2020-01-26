@@ -88,6 +88,7 @@ header {
 
       &:last-child {
         margin-right: 0;
+        cursor: initial;
       }
 
       &::before {
@@ -103,7 +104,7 @@ header {
         z-index: -1;
       }
 
-      &:hover {
+      &:hover:not(.no-hover) {
         &::before {
           transform: scaleX(1);
         }
@@ -112,6 +113,49 @@ header {
       .nav-links {
         text-decoration: none;
         color: var(--accents);
+
+        .checkbox {
+          position: relative;
+          width: 30px;
+          height: 1rem;
+          cursor: pointer;
+
+          &::before {
+            position: absolute;
+            content: "";
+            background: var(--completed-item);
+            width: 30px;
+            height: 15px;
+            top: 0;
+            left: 0;
+            border-radius: 60px;
+            transition: var(--tranistion);
+          }
+
+          &::after {
+            position: absolute;
+            content: "";
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            transition: var(--tranistion);
+            box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.8);
+          }
+
+          &:checked::before {
+            background: var(--accent);
+          }
+          &:checked::after {
+            transform: translateX(100%);
+          }
+        }
+
+        .fas::before {
+          font-size: 1.5rem;
+        }
       }
     }
   }

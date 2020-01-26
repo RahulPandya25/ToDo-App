@@ -118,6 +118,7 @@ header .navbar li {
 
 header .navbar li:last-child {
   margin-right: 0;
+  cursor: initial;
 }
 
 header .navbar li::before {
@@ -135,7 +136,7 @@ header .navbar li::before {
   z-index: -1;
 }
 
-header .navbar li:hover::before {
+header .navbar li:hover:not(.no-hover)::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -143,6 +144,54 @@ header .navbar li:hover::before {
 header .navbar li .nav-links {
   text-decoration: none;
   color: var(--accents);
+}
+
+header .navbar li .nav-links .checkbox {
+  position: relative;
+  width: 30px;
+  height: 1rem;
+  cursor: pointer;
+}
+
+header .navbar li .nav-links .checkbox::before {
+  position: absolute;
+  content: "";
+  background: var(--completed-item);
+  width: 30px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  border-radius: 60px;
+  -webkit-transition: var(--tranistion);
+  transition: var(--tranistion);
+}
+
+header .navbar li .nav-links .checkbox::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  -webkit-transition: var(--tranistion);
+  transition: var(--tranistion);
+  -webkit-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+header .navbar li .nav-links .checkbox:checked::before {
+  background: var(--accent);
+}
+
+header .navbar li .nav-links .checkbox:checked::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+header .navbar li .nav-links .fas::before {
+  font-size: 1.5rem;
 }
 
 header .hamburger {
