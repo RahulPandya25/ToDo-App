@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" media="screen and (max-width: 425px)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 426px) and (max-width: 1023px)" href="css/tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 425px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 426px) and (max-width: 1023px)"
+      href="css/tablet.css"
+    />
 
     <script src="https://use.fontawesome.com/dcab52ec27.js"></script>
     <script src="https://unpkg.com/colcade@0/colcade.js"></script>
@@ -16,18 +24,25 @@
   <body>
     <!-- header starts here -->
     <header>
-
       <!-- TODO: hamburger for navbar for mobile device -->
 
       <div class="logo">
         <span class="logo-text">ToDo</span>
       </div>
       <ul class="navbar">
-        <li><span class="nav-links create-new-list" onclick="addNewCard()">New List</span></li>
+        <li>
+          <span class="nav-links create-new-list" onclick="addNewCard()"
+            >New List</span
+          >
+        </li>
         <li><span class="nav-links change-view">Change view</span></li>
-        <li><span class="nav-links color-mode" id="dark-mode-toggle">Color Mode</span></li>
+        <li>
+          <span class="nav-links color-mode" id="dark-mode-toggle"
+            >Color Mode</span
+          >
+        </li>
       </ul>
-        <!-- TODO: hamburger for mobile to be added -->
+      <!-- TODO: hamburger for mobile to be added -->
       <div class="hamburger"></div>
     </header>
     <!-- header ends here -->
@@ -44,7 +59,11 @@
           <div class="grid-item card" id="card-1">
             <!-- card title starts here -->
             <div class="title">
-              <input type="text" placeholder="Add Title" onfocusout="saveTitle(event)"/>
+              <input
+                type="text"
+                placeholder="Add Title"
+                onfocusout="saveTitle(event)"
+              />
             </div>
             <!-- card title ends here -->
 
@@ -53,31 +72,58 @@
               <div class="item-set">
                 <label class="label">Todo</label>
                 <div class="item-action">
-                  <div class="tick"><i class="fa fa-check" onclick="completeThisItem(event)"></i></div>
-                  <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
+                  <div class="tick">
+                    <i
+                      class="fa fa-check"
+                      onclick="completeThisItem(event)"
+                    ></i>
+                  </div>
+                  <div class="cross">
+                    <i class="fa fa-times" onclick="removeThisItem(event)"></i>
+                  </div>
                 </div>
               </div>
               <div class="item-set">
                 <label class="label">Todo</label>
                 <div class="item-action">
-                  <div class="tick"><i class="fa fa-check" onclick="completeThisItem(event)"></i></div>
-                  <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
+                  <div class="tick">
+                    <i
+                      class="fa fa-check"
+                      onclick="completeThisItem(event)"
+                    ></i>
+                  </div>
+                  <div class="cross">
+                    <i class="fa fa-times" onclick="removeThisItem(event)"></i>
+                  </div>
                 </div>
               </div>
               <div class="item-set">
                 <label class="label">Todo</label>
                 <div class="item-action">
-                  <div class="tick"><i class="fa fa-check" onclick="completeThisItem(event)"></i></div>
-                  <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
+                  <div class="tick">
+                    <i
+                      class="fa fa-check"
+                      onclick="completeThisItem(event)"
+                    ></i>
+                  </div>
+                  <div class="cross">
+                    <i class="fa fa-times" onclick="removeThisItem(event)"></i>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- card todo-item list ends here -->
             <div class="new-item">
               <div class="item-set" id="new-item-1">
-                <input type="text" placeholder="Add New Item" onkeypress="addNewTodoItemOnEnter(event)"/>
+                <input
+                  type="text"
+                  placeholder="Add New Item"
+                  onkeypress="addNewTodoItemOnEnter(event)"
+                />
                 <div class="item-action">
-                  <div class="plus"><i class="fa fa-plus" onclick="addNewTodoItem(event)"></i></div>
+                  <div class="plus">
+                    <i class="fa fa-plus" onclick="addNewTodoItem(event)"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,19 +132,25 @@
               <div class="item-set">
                 <label class="label">Completed</label>
                 <div class="item-action">
-                  <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
+                  <div class="cross">
+                    <i class="fa fa-times" onclick="removeThisItem(event)"></i>
+                  </div>
                 </div>
               </div>
               <div class="item-set">
                 <label class="label">Completed</label>
                 <div class="item-action">
-                  <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
+                  <div class="cross">
+                    <i class="fa fa-times" onclick="removeThisItem(event)"></i>
+                  </div>
                 </div>
               </div>
               <div class="item-set">
                 <label class="label">Completed</label>
                 <div class="item-action">
-                  <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
+                  <div class="cross">
+                    <i class="fa fa-times" onclick="removeThisItem(event)"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -108,23 +160,40 @@
 
           <div class="grid-item card" id="card-2">
             <div class="title">
-              <input type="text" placeholder="Add Title" onfocusout="saveTitle(event)"/>
+              <input
+                type="text"
+                placeholder="Add Title"
+                onfocusout="saveTitle(event)"
+              />
             </div>
             <div class="todo-items">
               <div class="item-set">
                 <label class="label">Todo</label>
                 <div class="item-action">
-                  <div class="tick"><i class="fa fa-check" onclick="completeThisItem(event)"></i></div>
-                  <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
+                  <div class="tick">
+                    <i
+                      class="fa fa-check"
+                      onclick="completeThisItem(event)"
+                    ></i>
+                  </div>
+                  <div class="cross">
+                    <i class="fa fa-times" onclick="removeThisItem(event)"></i>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="new-item">
               <div class="item-set" id="new-item-2">
-                <input type="text" placeholder="Add New Item" onkeypress="addNewTodoItemOnEnter(event)"/>
+                <input
+                  type="text"
+                  placeholder="Add New Item"
+                  onkeypress="addNewTodoItemOnEnter(event)"
+                />
                 <div class="item-action">
-                  <div class="plus"><i class="fa fa-plus" onclick="addNewTodoItem(event)"></i></div>
+                  <div class="plus">
+                    <i class="fa fa-plus" onclick="addNewTodoItem(event)"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -133,7 +202,9 @@
               <div class="item-set">
                 <label class="label">Completed</label>
                 <div class="item-action">
-                  <div class="cross"><i class="fa fa-times" onclick="removeThisItem(event)"></i></div>
+                  <div class="cross">
+                    <i class="fa fa-times" onclick="removeThisItem(event)"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -142,14 +213,24 @@
           <!-- new card format -->
           <div class="grid-item card" id="card-3">
             <div class="title">
-              <input type="text" placeholder="Add Title" onfocusout="saveTitle(event)"/>
+              <input
+                type="text"
+                placeholder="Add Title"
+                onfocusout="saveTitle(event)"
+              />
             </div>
             <div class="todo-items"></div>
             <div class="new-item">
               <div class="item-set" id="new-item-3">
-                <input type="text" placeholder="Add New Item" onkeypress="addNewTodoItemOnEnter(event)"/>
+                <input
+                  type="text"
+                  placeholder="Add New Item"
+                  onkeypress="addNewTodoItemOnEnter(event)"
+                />
                 <div class="item-action">
-                  <div class="plus"><i class="fa fa-plus" onclick="addNewTodoItem(event)"></i></div>
+                  <div class="plus">
+                    <i class="fa fa-plus" onclick="addNewTodoItem(event)"></i>
+                  </div>
                 </div>
               </div>
             </div>
