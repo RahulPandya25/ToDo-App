@@ -136,7 +136,7 @@ header .navbar li::before {
   z-index: -1;
 }
 
-header .navbar li:hover:not(.no-hover)::before {
+header .navbar li:hover:not(:last-of-type)::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -151,6 +151,7 @@ header .navbar li .nav-links .checkbox {
   width: 30px;
   height: 1rem;
   cursor: pointer;
+  margin: 0 0 0 0.25rem;
 }
 
 header .navbar li .nav-links .checkbox::before {
